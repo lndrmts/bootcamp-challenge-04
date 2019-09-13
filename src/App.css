@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #4a90e2;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+header .my--perfil {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+.post {
+  display: grid;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.133916);
+  border-radius: 4px;
+  padding: 20px;
+
+  grid-template-areas:
+    "avatar author-name author-name"
+    "avatar post-date post-date"
+    "post-content post-content post-content";
+  grid-template-columns: 32px 1fr;
+  grid-gap: 10px;
+  margin-top: 35px;
+}
+.post--avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  grid-area: "avatar";
+  align-self: center;
+}
+.post-author--name {
+  grid-area: "author-name";
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #4a4a4a;
+}
+.post--date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+
+  color: #9a9a9a;
+  grid-area: "post-date";
+}
+.post--content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  grid-area: "post-content";
+
+  color: #3e3e3e;
+}
