@@ -17,10 +17,39 @@ class PostList extends Component {
           {
             id: 1,
             author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
+              name: "Aline",
+              avatar: "https://i.pravatar.cc/150?img=11"
             },
-            content: "Conteúdo do comentário"
+            content:
+              "Sim, sempre estão contratando, então dedique-se aos estudos."
+          },
+          {
+            id: 1,
+            author: {
+              name: "Pietro",
+              avatar: "https://i.pravatar.cc/150?img=24"
+            },
+            content:
+              "É isso mesmo, estão sempre contratando e por isso que estou estudando bastante, para conseguir minha vaga lá"
+          }
+        ]
+      },
+      {
+        id: 2,
+        author: {
+          name: "Lourenna Emanuele",
+          avatar: "https://i.pravatar.cc/150?img=1"
+        },
+        date: "04 Jun 2019",
+        content: "As coisas estão ficando interessante por aqui, o que acham?",
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: "Leandro",
+              avatar: "https://i.pravatar.cc/150?img=14"
+            },
+            content: "Sim, condordo com você estão super, demais demais."
           }
         ]
       }
